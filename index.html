@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+
+            <!-- no index -->
+            <meta name="robots" content="noindex">
+            <meta name="googlebot" content="noindex">
+
+            <meta name="description" content="Learn Front End Web Development with FTC Web Developer Course, create modern, clean and responsive websites.">
+            <meta name="keywords" content="Website creation Course, Developer course, Responsive website, Front-End Web Development, Developer Dublin">
+            <meta name="author" content="Dimitri Devoille">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>FTC Web Development | Front-End Course - get new skills</title>
+
+            <!-- font awesome -->
+            <link rel="stylesheet" href="css/css/all.css">
+
+            <!-- google font -->
+            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+            <!-- css files -->
+            <link rel="stylesheet" type="text/css" href="css/reset.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+            <!-- jQuery -->
+            <script
+                src="https://code.jquery.com/jquery-3.5.0.min.js"
+                integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+                crossorigin="anonymous"></script>
+
+            <!-- Script -->
+            <script src="script/script.js"></script>
+        </head>
+        <body>
+
+            <!-- Header -->
+            <header>
+                <h1>FTC Web Developer</h1>
+                <div tabindex="0" role="menu" aria-label="open" id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>Your Front-End Course in Dublin</p>
+            </header>
+
+            <!-- Navigation -->
+            <nav>
+                <div tabindex="0" role="menu" aria-label="close" id="cross">
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a class="active navlink" href="#">Home</a></li>
+                    <li><a class="navlink" href="html/content.html">Course Content</a></li>
+                    <li><a class="navlink" href="html/certification.html">Certification</a></li>
+                    <li><a class="navlink" href="html/application.html">Application</a></li>
+                    <li><a class="navlink" href="html/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Content -->            
+            <div id="video-container">
+                <div id="welcome">
+                    <h1>FTC Web Developer</h1>
+                    <h2>We help you getting new skills</h2>
+                    <div id="home-link">
+                        <a href="html/content.html">Course content</a>
+                        <a href="html/contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <video loop autoplay muted>  <!-- to make autoplay works in chrome I added the muted attribute -->
+                    <source src="video/homevideo.mp4" type="video/mp4">
+                    <source src="video/homevideo.ogg" type="video/ogg">
+                    Your browser does not support the video.
+                </video>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; Copyright FTC Web Developer, 2020</p>
+                <div class="icon">
+                    <div>
+                        <a id="font-icon-f" aria-label="facebook" href="#"><i aria-hidden="false" title="facebook" class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div>
+                        <a id="font-icon-c" aria-label="contact" href="html/contact.html"><i aria-hidden="false" title="contact" class="fas fa-envelope-open-text"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </html>
