@@ -1,0 +1,737 @@
+body{
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    background-color:  #fff;
+    
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+p{
+    font-size: 1em;
+}
+
+a{
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#qqi:focus, #intreo:focus, #emailaddress:focus{
+    border: 2px solid rgb(0,178,178);
+}
+
+
+/*----------------------------------- Header ------------------------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: linear-gradient(to right, rgb(0,178,178), #e7e7e7, rgb(64,146,200));
+    height: 10vh;
+}
+
+header p{
+    display: none;
+}
+
+#menu-icon{
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+
+#menu-icon span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+
+#menu-icon span:last-child{
+    margin-bottom: 0;
+}
+/*---------------------------------- End of Header -------------------------------------*/
+
+/*---------------------------------- Navigation -------------------------------------*/
+
+nav {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    background-color: rgb(93,93,93);
+    
+}
+
+nav a, nav a:visited{
+    display: block;
+    font-weight: bold;
+    color: rgb(231,231,231);
+    font-size: 1.5em;
+    text-align: center;
+    width: 90vw;
+    cursor: pointer;
+}
+
+nav a:hover, nav a:focus{
+    background-color: rgba(64,146,200,0.7);
+    border-radius: 5px;
+}
+
+nav a:visited{
+    color: rgb(231,231,231);
+}
+
+.active{
+    background-color: rgba(64,146,200,0.7);
+    border-radius: 5px;
+}
+
+#cross{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+}
+
+#cross span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: rgb(231,231,231);
+    position: absolute;
+    top: 12px;    
+}
+
+#cross span:first-child{
+    transform: rotate(45deg);
+
+}
+
+#cross span:last-child{
+    transform: rotate(-45deg);
+}
+
+nav ul{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li{
+    margin: 0 1em;
+    width: 90vw;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+}
+
+/*---------------------------------- End of Navigation -------------------------------------*/
+
+/*---------------------------------- Home Content -------------------------------------*/
+
+#welcome{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    max-height: 80%;
+    z-index: 1;
+    color: rgb(231,231,231);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 1em;
+    
+}
+
+#welcome h1{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: rgb(64,146,200);
+}
+
+#welcome h2{
+    display: none;
+    font-size: 1em;
+    padding-bottom: 0.7em;
+    color: black;
+}
+
+#home-link{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#home-link a{
+    text-align: center;
+    background: linear-gradient(45deg, #e7e7e7, rgb(64,146,200));
+    box-shadow:  3px 3px 5px rgb(50,50,50);
+    color: #000;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    flex: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#home-link a:hover, #home-link a:focus{
+    background: linear-gradient(45deg, #e7e7e7, rgb(0,178,178));
+    
+}
+
+#home-link a:active{
+    box-shadow:  0 0 2px rgb(50,50,50);
+}
+
+/* video */
+
+#video-container{
+    position: relative;
+    overflow: hidden;
+    width: 100% !important;
+    height: 78vh;
+    background-size: cover;
+}
+
+/*---------------------------------- End of Home Content -------------------------------------*/
+
+
+/*----------------- content Layout ------------------*/
+
+.wrapper{
+    display: flex;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    box-shadow: 0px 5px 10px rgb(150,150,150);
+}
+
+.image-container{
+    display: none;
+}
+
+.left{
+    flex: 80%;
+    padding: 1em;
+}
+
+.right{
+    flex: 20%;
+    box-sizing: border-box;
+}
+
+.right span{
+    width: 33%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    background: linear-gradient(to top, #e7e7e7, rgb(64,146,200), #e7e7e7 98% ) ;
+}
+
+.wrapper h1{
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+.wrapper p{
+    padding: 1rem 0;
+}
+
+.wrapper ul{
+    font-size: 0.9em;
+    padding: 0 1em;
+    margin-left: 2em;
+}
+
+.wrapper li{
+    padding: 0.5em 0;
+    list-style-type: circle;
+}
+
+/*-----------------------------End of Content Layout------------------------*/
+
+/*---------------------------------- Course Content -------------------------------------*/
+.extra{
+    margin: 1em 0;
+}
+
+.extra h2{
+    font-size: 1.3em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #e7e7e7, rgb(64,146,200));
+    color: #000;
+    box-shadow:  3px 3px 5px rgb(50,50,50);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.extra h2:hover, .extra h2:focus{
+    background: linear-gradient(45deg, #e7e7e7, rgb(0,178,178));
+}
+
+.extra h2:active{
+    box-shadow:  0 0 2px rgb(50,50,50);
+}
+
+.extra p{
+    margin-left: 1em;
+}
+/*---------------------------------- End of Course Content -------------------------------------*/
+
+/*---------------------------------- Certification Content -------------------------------------*/
+
+#certification a, #certification a:visited{
+    color: rgb(64,146,200)
+
+}
+
+/*---------------------------------- End of Certification Content -------------------------------------*/
+
+/*---------------------------------- Application Content -------------------------------------*/
+
+#application h2{
+    padding-top: 1em;
+}
+
+#intreo, #intreo:visited{
+    color: rgb(64,146,200)
+}
+
+#applynow{
+    display: block;
+    padding: 0.5em;
+    background: linear-gradient(45deg, #e7e7e7, rgb(64,146,200));
+    color: #000;
+    box-shadow:  3px 3px 5px rgb(50,50,50);
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 2em 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#applynow:hover, #applynow:focus{
+    background: linear-gradient(45deg, #e7e7e7, rgb(0,178,178));
+}
+
+#applynow:active{
+    box-shadow:  0 0 2px rgb(50,50,50);
+}
+
+/*---------------------------------- End of Application Content -------------------------------------*/
+
+/*---------------------------------- Contact Content -------------------------------------*/
+
+#contact h2{
+    padding: 0.5em 0;
+}
+
+#contact h1{
+    padding-bottom: 0.3em;
+}
+
+#contact ul{
+    list-style-type: none;
+}
+
+#contact a, #contact a:visited{
+    color: rgb(64,146,200);
+}
+
+#map-button{
+    display: block;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background: linear-gradient(45deg, #e7e7e7, rgb(64,146,200));
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(50,50,50);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#map-button:hover, #map-button:focus{
+    background: linear-gradient(45deg, #e7e7e7, rgb(0,178,178) );
+}
+
+#map-button:active{
+    box-shadow: 0 0 2px rgb(50,50,50);
+}
+
+#map{
+    width: 100%;
+    margin: 1em auto;
+    border: 2px solid rgb(0,178,178);
+    box-shadow: 3px 3px 3px rgb(50,50,50);
+}
+
+#form{
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email] {
+    width: 98%;
+    padding: 0.5em;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    box-shadow: inset 2px 2px 3px rgb(0,178,178);
+    border: none;
+}
+
+#form p{
+    padding: 0.2em 0;
+}
+
+textarea{
+    resize: none;
+    width: 98.2%;
+    height: 10vh;
+    padding: 0.5em;
+}
+
+textarea:focus{
+    box-shadow: inset 2px 2px 3px rgb(0,178,178);
+}
+
+input[type=submit], input[type=submit]:visited{
+    padding: 0.5em;
+    background: linear-gradient(45deg, #e7e7e7, rgb(64,146,200));
+    color: #000;
+    box-shadow:  3px 3px 5px rgb(50,50,50);
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit]:hover, input[type=submit]:focus{
+    background: linear-gradient(45deg, #e7e7e7, rgb(0,178,178) );   
+}
+input[type=submit]:active{
+    box-shadow:  0 0 2px rgb(50,50,50);
+}
+/*---------------------------------- End of Contact Content -------------------------------------*/
+
+/*---------------------------------- Footer -------------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(to right, rgb(0,178,178), #e7e7e7, rgb(64,146,200));    
+    color: rgb(50,50,50);
+    padding: 0.5em;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    min-width: 40%;
+}
+
+.fas, .fab{
+    color: rgb(93,93,93);
+    transition: all 0.3s ease-in-out;
+}
+
+.fas:hover, .fab:hover, .fas:focus, .fab:focus {
+    color: #000;
+}
+/*-------------------------------- End of Footer ---------------------------------------*/
+
+
+/*-------------------------------- Media Queries ---------------------------------------*/
+
+/*------------------------------------ 480px ------------------------------------*/
+@media screen and (min-width: 480px){
+
+
+    /*----- home content ------*/
+    #welcome h1{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    #welcome h2{
+        display: block;
+        font-size: 1em;
+    }
+}
+/*------------------------------------ 768px ------------------------------------*/
+
+@media screen and (min-width: 768px){
+
+    .wrapper{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 1em 0 1em;
+        min-height: 80vh;
+    }
+
+    /*--------- Header ----------*/
+
+
+    header h1{
+        font-size: 2em;
+    }
+
+    header p{
+        display: block;
+        
+    }
+
+    #menu-icon{
+        display: none;
+    }
+
+    /*------- Navigation --------*/
+
+    nav {
+        display: block;
+        height: 6vh;
+        width: auto;
+        width: initial; /* IE */
+        position: static;
+        background: linear-gradient(to right, rgb(0,178,178), #e7e7e7, rgb(64,146,200));
+    }
+
+    nav ul{
+        /* display: -ms-flexbox; */
+        display: flex;
+        justify-content: center;
+        margin: 0 2vw;
+        position: initial;
+        top: 0;
+        transform: translateY(0);
+    }
+  
+    nav ul li{
+        margin: 0 0;
+        height: 6vh;
+        line-height: 6vh;
+        
+    }
+
+    nav a, nav a:visited{
+        font-size: 1em;
+        width: auto; 
+        color: #000;
+    }
+
+
+    #cross{
+        display: none;
+    }
+
+    /*-------- Home --------*/
+
+    #welcome h1{
+        font-size: 2em;
+    }
+
+    #welcome h2{
+        font-size: 1.2em;
+    }
+
+    #home-link{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    #home-link a{
+        max-width: 45%;
+    }
+
+    /*--------- Content ---------*/
+
+    #content{
+        background: url("../images/content.jpg") no-repeat;
+        background-size: cover; 
+    }
+
+    /*--------- Certification ---------*/
+
+    #certification{
+        background: url("../images/certification.jpg") no-repeat;
+        background-size: cover; 
+    }
+
+    /*--------- Application ---------*/
+
+    #application{
+        background: url("../images/application.jpg") no-repeat;
+        background-size: cover; 
+    }
+
+    /*-------- Contact --------*/
+    
+    #contact{
+        background: url("../images/contact.jpg") no-repeat;
+        background-size: cover; 
+    }
+
+    #contact .wrapper li{
+        list-style-type: none;
+    }
+
+    #map{
+        height: 35vh;
+    }
+
+    /*-------- Footer --------*/
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:  0.5em 1em;
+
+    }
+    
+    .icon{
+        min-width: 15%;
+        padding-top: 0.1em;
+        font-size: 1.5em;
+    }
+
+    .fas, .fab{
+        color: rgb(231,231,231);
+
+}
+
+/*------------------------------------ 1200px ------------------------------------*/
+@media screen and (min-width: 1200px){
+
+    
+      /*------------- Navigation ------------*/
+
+        nav{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul{
+            width: 80%;
+        }
+        
+        /*-------- Home --------*/
+
+        #welcome{
+            width: 40vw;
+        }
+
+        #welcome h1{
+            font-size: 2.5em;
+        }
+
+        /*-------- content Layout ---------*/
+
+        .left{
+            flex: 60%;
+        }
+    
+        .right span{
+            width: 25%;
+        }
+
+        .right{
+            position: relative;
+            flex: 40%;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        #image-content, #image-certification, #image-application, #image-contact{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25vw;
+            z-index: 1;
+            height: 500px;
+            background-size: cover;     
+        }
+
+
+        /*-------- content --------*/
+
+        #content{
+            background: none;
+        }
+
+        #image-content{
+            background: url("../images/content.jpg") no-repeat center;
+            box-shadow: 5px 5px 5px rgb(50,50,50); 
+        }
+        /*-------- Certification --------*/
+
+        #certification{
+            background: none;
+        }
+    
+        #image-certification{
+            background: url("../images/certification.jpg") no-repeat center;
+            max-height: 100%;
+            box-shadow: 5px 5px 5px rgb(50,50,50); 
+        }
+
+
+        /*-------- Application --------*/
+    
+        #application{
+            background: none;
+        }
+
+        #image-application{
+            background: url("../images/application.jpg") no-repeat 25%;
+            box-shadow: 5px 5px 5px rgb(50,50,50); 
+        }
+        /*-------- Contact --------*/   
+    
+        #contact{
+            background: none;
+        }
+
+        #image-contact{
+            background: url("../images/contact.jpg") no-repeat center;
+            box-shadow: 5px 5px 5px rgb(50,50,50); 
+        }
+ 
+        /*------------- Footer ----------------*/
+        .icon{
+            min-width: 10%;
+        }
+}
